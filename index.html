@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta name="robots" content="noindex">
+		<meta charset="utf-8" />
+		<meta name="author" content="www.frebsite.nl" />
+		<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+        <link href="images/icon.png" rel="icon" sizes="128x128" />
+        <link href="images/icon.png" rel="apple-touch-icon" sizes="128x128" />
+        <link href="images/icon.png" rel="apple-touch-icon-precomposed" sizes="128x128" />
+        <title>xx小組</title>
+        <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css" />
+        <link type="text/css" rel="stylesheet" href="css/jquery.mmenu.css" />
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/owl.theme.default.min.css">
+        <link type="text/css" rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<div id="page">
+			<div class="header Fixed">
+				<a href="#menu"><span></span></a>
+				xx小組
+			</div>
+			<div class="content">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item"><img src="images/slider/1.jpg"></div>
+                        <div class="item"><img src="images/slider/2.jpg"></div>
+                        <div class="item"><img src="images/slider/3.jpg"></div>
+                        <div class="item"><img src="images/slider/4.jpg"></div>
+                        <div class="item"><img src="images/slider/5.jpg"></div>
+                        <div class="item"><img src="images/slider/6.jpg"></div>
+                        <div class="item"><img src="images/slider/7.jpg"></div>
+                        <div class="item"><img src="images/slider/8.jpg"></div>
+                    </div>
+                    <div class="link-group">
+                        <a class="link1" href="https://docs.google.com/forms/d/e/1FAIpQLSe-6tGwZ-fkSK24-JT7FRW-SJMG7BZNwC2slReEHhgr8CLTMg/viewform?c=0&w=1"><span>填寫</span><i class="fa fa-pencil-square-o" aria-hidden="true"></i>代禱事項</a>
+                        <a class="link2" href="https://docs.google.com/spreadsheets/d/1TZdod4M3mCE1m-x9TPdh2HSc9keqbz1bcY4dfTT9Sbk/edit"><span>查看</span><i class="fa fa-list-ol" aria-hidden="true"></i>代禱事項</a>
+                        <a class="link3" href="https://docs.google.com/spreadsheets/d/1fzLYVkqR_Nfh-ag9kYIs4z6wJvg2KCG4HKbw6BP5LLE/edit#gid=1281719282"><i class="fa fa-users" aria-hidden="true"></i>小組出席紀錄</a>
+                        <a class="link4" href="https://docs.google.com/spreadsheets/d/1LWbO_NneHudCvs6B72TgBwQYAQgjzUJSnjqOCKeVFE4/edit#gid=1653859556"><i class="fa fa-list-ol" aria-hidden="true"></i>建造程序紀錄表</a>
+                        <a class="link5" href="https://docs.google.com/spreadsheets/d/1UM7L97XBv8L4wELZ2Fubyaa6c6FK0zpvnifyCYRg74I/edit#gid=1281719282"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>靈修紀錄</a>
+                        <a class="link6" href="#"><i class="fa fa-music" aria-hidden="true"></i>詩歌</a>
+                    </div>
+                    <div class="photo">
+                        <a class="link7" href="https://drive.google.com/drive/folders/1aWsykCrPPMFz4HjaZPYSuC1s4ewUHN-y"><i class="fa fa-picture-o" aria-hidden="true"></i>小組生活照</a>
+                    </div>
+            </div>
+            <div class="footer Fixed">
+				&copy;YuningChou
+			</div>
+			<nav id="menu">
+				<ul>
+                    <li><a href="#">name</a>
+                        <ul>
+                            <li><a href="tel:0912345678"><i class="fa fa-phone" aria-hidden="true"></i>0912345678</a></li>
+                            <li><a href="#"><i class="fa fa-birthday-cake" aria-hidden="true"></i>1/1</a></li>
+                            <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i>name@mail.com</a></li>
+                        </ul>
+                    </li>
+                   
+				</ul>
+			</nav>
+		</div>
+    </body>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mmenu.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $('nav#menu').mmenu({
+                navbar: {
+                    title: "通訊錄"
+                    },
+                 "extensions": ["fullscreen"]
+                });
+                $('.owl-carousel').owlCarousel({
+                    loop:true,
+                    autoplay:true,
+                    margin:0,
+                    dots:false,
+                    responsive:{
+                        0:{
+                            items:1
+                        },
+                        600:{
+                            items:2
+                        },
+                        1000:{
+                            items:3
+                        }
+                    }
+                })
+        });
+    </script>
+</html>
